@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Products | Miguel's Bakery</title>
+
+    <meta name="description" content="Explore cakes, pastries, doughnuts and freshly baked bread from Miguel's Bakery in Pietermaritzburg.">
+
+    <meta name="keywords" content="bakery products, cakes, chocolate cake, pastries, donuts, fresh bread">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+
+            <img src="images/bakery-hero.jpg"
+                 alt="Miguel's Bakery logo"
+                 class="site-logo">
+
+            <span>
+                <strong>Miguel's Bakery</strong>
+                <small>Freshly Baked with Care</small>
+            </span>
+
+        </a>
+
+        <nav class="main-nav">
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="product-main">
+
+        <section class="page-intro">
+
+            <p class="eyebrow">Our Bakery Collection</p>
+
+            <h1>Explore Our Products</h1>
+
+            <p>
+                Discover a selection of delicious bakery products
+                available at Miguel's Bakery. Product availability
+                may differ.
+            </p>
+
+        </section>
+
+
+        <!-- Product Search -->
+        <section class="product-search">
+
+            <label for="productSearch">Search for a product:</label>
+
+            <input type="search"
+                   id="productSearch"
+                   placeholder="Search cakes, bread, pastries...">
+
+        </section>
+
+
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+
+            <button class="filter-button active"
+                    data-filter="all">All Products</button>
+
+            <button class="filter-button"
+                    data-filter="cakes">Cakes</button>
+
+            <button class="filter-button"
+                    data-filter="pastries">Pastries</button>
+
+            <button class="filter-button"
+                    data-filter="donuts">Donuts</button>
+
+            <button class="filter-button"
+                    data-filter="bread">Bread</button>
+
+        </div>
+
+
+        <!-- Cakes -->
+        <section class="product-category">
+
+            <h2>Cakes</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card" data-category="cakes">
+
+                    <img src="images/Heavenly Vanilla Bean Layer Cake Recipe.jpeg"
+                         alt="Vanilla celebration cake"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Vanilla Cake</h3>
+                        <p>A soft vanilla cake suitable for celebrations.</p>
+                        <a href="enquiry.html?product=cakes" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="cakes">
+
+                    <img src="images/Chocolate Cake.jpg"
+                         alt="Rich chocolate cake"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Chocolate Cake</h3>
+                        <p>A delicious chocolate cake for sweet occasions.</p>
+                        <a href="enquiry.html?product=cakes" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="cakes">
+
+                    <img src="images/Red Velvet.jpg"
+                         alt="Red velvet celebration cake"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Red Velvet Cake</h3>
+                        <p>A colourful cake for birthdays and celebrations.</p>
+                        <a href="enquiry.html?product=cakes" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Pastries -->
+        <section class="product-category">
+
+            <h2>Pastries</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card" data-category="pastries">
+
+                    <img src="images/Assorted Pastry.jpg"
+                         alt="Fresh assorted pastries"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Assorted Pastries</h3>
+                        <p>A selection of freshly baked pastries.</p>
+                        <a href="enquiry.html?product=pastries" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="pastries">
+
+                    <img src="images/butter-croissants.jpg"
+                         alt="Golden butter croissants"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Butter Croissants</h3>
+                        <p>Flaky pastries suitable for breakfast.</p>
+                        <a href="enquiry.html?product=pastries" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="pastries">
+
+                    <img src="images/Danish Pastries.jpg"
+                         alt="Sweet Danish pastries"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Danish Pastries</h3>
+                        <p>Sweet pastries for everyday enjoyment.</p>
+                        <a href="enquiry.html?product=pastries" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Donuts -->
+        <section class="product-category">
+
+            <h2>Donuts</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card" data-category="donuts">
+
+                    <img src="images/Glazed Donuts.jpg"
+                         alt="Freshly prepared glazed donuts"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Classic Glazed Donuts</h3>
+                        <p>Sweet donuts with a smooth glaze.</p>
+                        <a href="enquiry.html?product=donuts" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="donuts">
+
+                    <img src="images/choco donuts.jpg"
+                         alt="Chocolate coated donuts"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Chocolate Donuts</h3>
+                        <p>Donuts topped with delicious chocolate.</p>
+                        <a href="enquiry.html?product=donuts" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="donuts">
+
+                    <img src="images/Assorted donuts.jpg"
+                         alt="Assorted sweet glazed donuts"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Assorted Donuts</h3>
+                        <p>A selection of sweet donut varieties.</p>
+                        <a href="enquiry.html?product=donuts" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Bread -->
+        <section class="product-category">
+
+            <h2>Bread and Rolls</h2>
+
+            <div class="product-grid">
+
+                <article class="product-card" data-category="bread">
+
+                    <img src="images/Traditional bread.jpg"
+                         alt="Fresh traditional bakery bread"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Traditional Bread</h3>
+                        <p>Fresh bread suitable for everyday meals.</p>
+                        <a href="enquiry.html?product=bread" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="bread">
+
+                    <img src="images/sourdough bread.jpg"
+                         alt="Fresh sourdough bread"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Sourdough Bread</h3>
+                        <p>A delicious bread option with a distinctive flavour.</p>
+                        <a href="enquiry.html?product=bread" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card" data-category="bread">
+
+                    <img src="images/Mini Rolls.jpg"
+                         alt="Freshly baked bread rolls"
+                         class="gallery-image">
+
+                    <div class="product-card-content">
+                        <h3>Fresh Rolls</h3>
+                        <p>Soft rolls suitable for sandwiches and meals.</p>
+                        <a href="enquiry.html?product=bread" class="text-link">Enquire Now</a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <p id="noProducts" class="no-products" hidden>
+            No matching products were found. Please try another search.
+        </p>
+
+
+        <!-- Enquiry Call to Action -->
+        <section class="home-cta">
+
+            <h2>Found Something You Love?</h2>
+
+            <p>
+                Send us an enquiry about your favourite bakery products.
+            </p>
+
+            <a href="enquiry.html" class="button">
+                Let's Start Baking!
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+        <button class="lightbox-close"
+                id="lightboxClose"
+                aria-label="Close image">&times;</button>
+
+        <img src="" alt="Enlarged bakery product" id="lightboxImage">
+
+    </div>
+
+
+    <footer class="site-footer">
+
+        <p>&copy; <span class="current-year">2026</span>
+            Miguel's Bakery. All rights reserved.</p>
+
+        <p>Pietermaritzburg, KwaZulu-Natal, South Africa</p>
+
+    </footer>
+
+    <script src="Javascript/script.js"></script>
+
+</body>
+</html>

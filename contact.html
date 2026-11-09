@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Miguel's Bakery</title>
+
+    <meta name="description" content="Contact Miguel's Bakery in Pietermaritzburg for general enquiries, feedback and bakery information.">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+
+            <img src="images/bakery-hero.jpg"
+                 alt="Miguel's Bakery logo"
+                 class="site-logo">
+
+            <span>
+                <strong>Miguel's Bakery</strong>
+                <small>Freshly Baked with Care</small>
+            </span>
+
+        </a>
+
+        <nav class="main-nav">
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="contact-main">
+
+        <section class="page-intro">
+
+            <p class="eyebrow">We Are Here to Help</p>
+
+            <h1>Contact Miguel's Bakery</h1>
+
+            <p>
+                We would love to hear from you. Contact us for
+                general questions, feedback or more information
+                about our bakery.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Information -->
+        <section class="contact-grid">
+
+            <article class="contact-card">
+
+                <h2>Our Contact Details</h2>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Pietermaritzburg, KwaZulu-Natal
+                </p>
+
+                <p>
+                    <strong>Telephone:</strong><br>
+                    <a href="tel:0333424884">033 342 4884</a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:ST10537696@emeris.edu.za">
+                        ST10537696@emeris.edu.za
+                    </a>
+                </p>
+
+            </article>
+
+
+            <!-- Locations -->
+            <article class="contact-card">
+
+                <h2>Our Locations</h2>
+
+                <h3>Location 1</h3>
+
+                <p>
+                    Shop 89, Edendale Mall,<br>
+                    Pietermaritzburg,<br>
+                    KwaZulu-Natal, South Africa.
+                </p>
+
+
+                <h3>Location 2</h3>
+
+                <p>
+                    1 Ohrtmann Road,<br>
+                    Pietermaritzburg,<br>
+                    3201.
+                </p>
+
+
+                <h3>Location 3</h3>
+
+                <p>
+                    50 Alan Paton Avenue,<br>
+                    Scottsville,<br>
+                    Pietermaritzburg, 3201.
+                </p>
+
+            </article>
+
+
+            <!-- Opening Hours -->
+            <article class="contact-card">
+
+                <h2>Opening Hours</h2>
+
+                <ul class="hours-list">
+
+                    <li>Monday – Friday: 09h00 – 18h00</li>
+
+                    <li>Saturday: 09h00 – 15h00</li>
+
+                    <li>Sunday & Public Holidays: 09h00 – 14h00</li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- Leaflet Map -->
+        <section class="map-section">
+
+            <h2>Find Us on the Map</h2>
+
+            <p>
+                Explore the Pietermaritzburg area using our interactive map.
+                The marker is an approximate city-centre reference, not a
+                verified bakery branch address.
+            </p>
+
+            <div id="bakeryMap"
+                 class="bakery-map"
+                 role="application"
+                 aria-label="Interactive map of Pietermaritzburg"></div>
+
+        </section>
+
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+
+            <h2>Send Us a Message</h2>
+
+            <p>
+                Complete the form below to prepare a general message
+                for Miguel's Bakery.
+            </p>
+
+            <form id="contactForm" class="website-form">
+
+                <p>
+                    <label for="contactName">Full Name *</label>
+
+                    <input type="text"
+                           id="contactName"
+                           name="name"
+                           minlength="2"
+                           maxlength="60"
+                           required>
+                </p>
+
+
+                <p>
+                    <label for="contactEmail">Email Address *</label>
+
+                    <input type="email"
+                           id="contactEmail"
+                           name="email"
+                           required>
+                </p>
+
+
+                <p>
+                    <label for="contactPhone">Phone Number</label>
+
+                    <input type="tel"
+                           id="contactPhone"
+                           name="phone"
+                           pattern="[0-9 +()-]{7,20}"
+                           title="Enter a valid phone number.">
+                </p>
+
+
+                <p>
+                    <label for="messageType">Message Type *</label>
+
+                    <select id="messageType"
+                            name="messageType"
+                            required>
+
+                        <option value="">Select message type</option>
+
+                        <option value="General Question">General Question</option>
+
+                        <option value="Feedback">Feedback</option>
+
+                        <option value="Complaint">Complaint</option>
+
+                        <option value="Business Enquiry">Business Enquiry</option>
+
+                        <option value="Other">Other</option>
+
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="contactMessage">Your Message *</label>
+
+                    <textarea id="contactMessage"
+                              name="message"
+                              rows="6"
+                              minlength="10"
+                              maxlength="1500"
+                              placeholder="Write your message here..."
+                              required></textarea>
+                </p>
+
+
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+
+                <div id="contactResponse"
+                     class="form-response"
+                     aria-live="polite"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>&copy; <span class="current-year">2026</span>
+            Miguel's Bakery. All rights reserved.</p>
+
+        <p>Pietermaritzburg, KwaZulu-Natal, South Africa</p>
+
+    </footer>
+
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="Javascript/script.js"></script>
+
+</body>
+</html>

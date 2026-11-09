@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Enquiry | Miguel's Bakery</title>
+    <meta name="description" content="Enquire about cakes, pastries, bread and other bakery products at Miguel's Bakery in Pietermaritzburg.">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+
+            <img src="images/bakery-hero.jpg"
+                 alt="Miguel's Bakery logo"
+                 class="site-logo">
+
+            <span>
+                <strong>Miguel's Bakery</strong>
+                <small>Freshly Baked with Care</small>
+            </span>
+
+        </a>
+
+        <nav class="main-nav">
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main class="form-page">
+
+        <section class="page-intro">
+
+            <p class="eyebrow">Your Next Treat Starts Here</p>
+
+            <h1>Let's Start Baking!</h1>
+
+            <p>
+                Planning a celebration or looking for something delicious?
+                Complete the form below and tell us what you would like
+                to enquire about.
+            </p>
+
+        </section>
+
+
+        <!-- Enquiry Form -->
+        <form id="enquiryForm" class="website-form">
+
+            <section class="form-section">
+
+                <h2>Your Personal Details</h2>
+
+                <p>
+                    <label for="fullname">Full Name *</label>
+
+                    <input type="text"
+                           id="fullname"
+                           name="fullname"
+                           minlength="2"
+                           maxlength="60"
+                           required>
+                </p>
+
+
+                <p>
+                    <label for="email">Email Address *</label>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
+                </p>
+
+
+                <p>
+                    <label for="phone">Phone Number *</label>
+
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           pattern="[0-9 +()-]{7,20}"
+                           title="Enter a valid phone number."
+                           required>
+                </p>
+
+            </section>
+
+
+            <section class="form-section">
+
+                <h2>Product Enquiry Details</h2>
+
+                <p>
+                    <label for="product">Select a Product *</label>
+
+                    <select id="product" name="product" required>
+
+                        <option value="">Please select a product</option>
+                        <option value="Cakes">Cakes</option>
+                        <option value="Pastries">Pastries</option>
+                        <option value="Pies">Pies</option>
+                        <option value="Donuts">Donuts</option>
+                        <option value="Bread and Rolls">Bread and Rolls</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="quantity">Quantity *</label>
+
+                    <input type="number"
+                           id="quantity"
+                           name="quantity"
+                           min="1"
+                           max="500"
+                           required>
+                </p>
+
+
+                <p>
+                    <label for="date">Preferred Collection Date *</label>
+
+                    <input type="date"
+                           id="date"
+                           name="date"
+                           required>
+                </p>
+
+
+                <p>
+                    <label for="occasion">Occasion</label>
+
+                    <select id="occasion" name="occasion">
+
+                        <option value="">Select an occasion</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Family Event">Family Event</option>
+                        <option value="Business Event">Business Event</option>
+                        <option value="Everyday">Everyday</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="message">Additional Details *</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              minlength="5"
+                              maxlength="1000"
+                              placeholder="Tell us about your order, preferred flavours or special requirements..."
+                              required></textarea>
+                </p>
+
+            </section>
+
+
+            <div class="form-buttons">
+
+                <button type="submit" class="button">
+                    Let's Start Baking!
+                </button>
+
+                <button type="reset" class="button reset-button">
+                    Clear Form
+                </button>
+
+            </div>
+
+            <div id="enquiryResponse"
+                 class="form-response"
+                 aria-live="polite"></div>
+
+        </form>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>&copy; <span class="current-year">2026</span>
+            Miguel's Bakery. All rights reserved.</p>
+
+        <p>Pietermaritzburg, KwaZulu-Natal, South Africa</p>
+
+    </footer>
+
+    <script src="Javascript/script.js"></script>
+
+</body>
+</html>
